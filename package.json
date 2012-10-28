@@ -1,17 +1,22 @@
 {
-  "name": "pdf-conv",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node app"
-  },
-  "dependencies": {
-    "express": "3.0.0",
-    "jade": "*",
-    "less-middleware": "*"
-  },
-  "engines": {
-    "node": "0.8.x",
-    "npm": "1.1.x"
-  }
+	"name": "pdf-conv",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node app"
+	},
+
+	"dependencies": {
+		"express": "3.0.0",
+		"jade": "*",
+		"less-middleware": "*",
+		"formidable": "1.0.11",
+		"log4js": "0.5.4",
+		"generic-pool": "2.0.2"
+	},
+
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	}
 }

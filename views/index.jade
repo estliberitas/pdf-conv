@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form(action="/convert/http://192.168.56.101:3000/test/callback", method="post", enctype="multipart/form-data")
+    input(type="file", name="file")
+    input(type="submit", value="Send form")
