@@ -49,8 +49,9 @@ exports.handleFileUpload = function(req, res, next) {
  *
  * @param {IncomingMessage} req Express request
  * @param {ServerResponse} res Express response
+ * @param {Function} next Chain callback
  */
-exports.do = function(req, res) {
+exports.do = function(req, res, next) {
 	converter.processFile(req.file, function(err, outPath) {
 		if (err) {
 			return next(err);
